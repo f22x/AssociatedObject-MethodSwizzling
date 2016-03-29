@@ -26,11 +26,11 @@ class ViewController: UIViewController {
 
 }
 
-/**------------------------------------------------------*
-*                                                        |
-*   》》》》》》》》》》关联对象                              *
-*                                                        |
-*///-----------------------------------------------------*
+//-----------------------------------------------------
+//|                                                   |
+//|                      关联对象                      *
+//|                                                   |
+///----------------------------------------------------
 
 extension UIViewController{
 
@@ -57,8 +57,7 @@ var descriptiveName : String? {
 //        创建一个newValue的常量
         if let newValue = newValue{
 //            常量的实现基于objc_setAssociatedObject方法：包含4个参数，1、self；2、指向结构体成员变量的指针；3、新值（String类型）；4、关联对象存储类型（retain，nonatomic）
-            objc_setAssociatedObject(self, &AssociatedKeys.DescriptiveName, newValue as NSString?, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC))
-            
+            objc_setAssociatedObject(self, &AssociatedKeys.DescriptiveName, newValue as NSString?, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
             }
         }
     }
@@ -82,10 +81,13 @@ var descriptiveName : String? {
 //        }
 //    }
 //    
+//   @objc private func viewDidLoad () {
+//    
+//    }
 ////    执行互换
-//        dispatch_once(&isStatic.token) {
+////        dispatch_once(&isStatic.token) {
 ////            创建对应方法名
-//            let originalSelector = Selector("viewWillAppear:")
+//            let originalSelector = Selector("viewDidLoad")
 //            let swizzledSelector = Selector("nsh_viewWillAppear:")
 ////            创建方法
 //            let originalMethod = class_getInstanceMethod(self, originalSelector)
@@ -93,14 +95,14 @@ var descriptiveName : String? {
 ////            添加方法
 //            let didAddMethod = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))
 ////            互换
-//            if didAddMethod {
+//            if (didAddMethod) {
 //            //    代替
 //                class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod))
 //            } else {
 //            //    或者交换
 //                method_exchangeImplementations(originalMethod, swizzledMethod);
 //            }
-//        }
+////        }
 //    
 ////    执行互换后的函数
 //    func x_viewWillApear(animated:Bool){

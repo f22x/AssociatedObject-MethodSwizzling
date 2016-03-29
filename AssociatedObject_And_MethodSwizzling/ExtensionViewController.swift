@@ -14,7 +14,7 @@ class ExtensionViewController: UIViewController {
         super.viewDidLoad()
         self.descriptiveName = "123"
         // Do any additional setup after loading the view.
-        println("\(self.descriptiveName)")
+        print("\(self.descriptiveName)")
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,8 @@
 		9BBC30F91B0C35CB00D41AD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC30F71B0C35CB00D41AD5 /* LaunchScreen.xib */; };
 		9BBC31051B0C35CB00D41AD5 /* AssociatedObject_And_MethodSwizzlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC31041B0C35CB00D41AD5 /* AssociatedObject_And_MethodSwizzlingTests.swift */; };
 		9BBC310F1B0C382C00D41AD5 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC310E1B0C382C00D41AD5 /* ExtensionViewController.swift */; };
+		ABF78BA51CAABEFA00B31C2B /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF78BA41CAABEFA00B31C2B /* MyViewController.m */; };
+		ABF78BA81CAAC19100B31C2B /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF78BA71CAAC19100B31C2B /* NSObject+AssociatedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 		9BBC31041B0C35CB00D41AD5 /* AssociatedObject_And_MethodSwizzlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject_And_MethodSwizzlingTests.swift; sourceTree = "<group>"; };
 		9BBC310E1B0C382C00D41AD5 /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		9BBC31101B0C388400D41AD5 /* AssociatedObject_And_MethodSwizzling-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssociatedObject_And_MethodSwizzling-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABF78BA31CAABEFA00B31C2B /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		ABF78BA41CAABEFA00B31C2B /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		ABF78BA61CAAC19100B31C2B /* NSObject+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObject.h"; sourceTree = "<group>"; };
+		ABF78BA71CAAC19100B31C2B /* NSObject+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObject.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 				9BBC30EE1B0C35CB00D41AD5 /* AppDelegate.swift */,
 				9BBC30F01B0C35CB00D41AD5 /* ViewController.swift */,
 				9BBC310E1B0C382C00D41AD5 /* ExtensionViewController.swift */,
+				ABF78BA31CAABEFA00B31C2B /* MyViewController.h */,
+				ABF78BA41CAABEFA00B31C2B /* MyViewController.m */,
+				ABF78BA61CAAC19100B31C2B /* NSObject+AssociatedObject.h */,
+				ABF78BA71CAAC19100B31C2B /* NSObject+AssociatedObject.m */,
 				9BBC30F21B0C35CB00D41AD5 /* Main.storyboard */,
 				9BBC30F51B0C35CB00D41AD5 /* Images.xcassets */,
 				9BBC30F71B0C35CB00D41AD5 /* LaunchScreen.xib */,
@@ -161,6 +171,7 @@
 		9BBC30E11B0C35CB00D41AD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = ZPlay;
 				TargetAttributes = {
@@ -217,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF78BA81CAAC19100B31C2B /* NSObject+AssociatedObject.m in Sources */,
 				9BBC30F11B0C35CB00D41AD5 /* ViewController.swift in Sources */,
 				9BBC30EF1B0C35CB00D41AD5 /* AppDelegate.swift in Sources */,
+				ABF78BA51CAABEFA00B31C2B /* MyViewController.m in Sources */,
 				9BBC310F1B0C382C00D41AD5 /* ExtensionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +431,7 @@
 				9BBC310A1B0C35CB00D41AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BBC310B1B0C35CB00D41AD5 /* Build configuration list for PBXNativeTarget "AssociatedObject_And_MethodSwizzlingTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +440,7 @@
 				9BBC310D1B0C35CB00D41AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
