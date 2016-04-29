@@ -1,9 +1,9 @@
 //
-//  AppDelegate.swift
+//  ViewController.swift
 //  AssociatedObject_And_MethodSwizzling
 //
-//  Created by xinglei on 15/5/20.
-//  Copyright (c) 2015年 ZPlay. All rights reserved.
+//  Created by lei on 15/5/20.
+//  Copyright (c) 2015年 lei. All rights reserved.
 //
 
 import UIKit
